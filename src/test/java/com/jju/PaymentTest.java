@@ -1,8 +1,9 @@
 package com.jju;
 
-import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
+
+// REMOVED: import static org.junit.Assert.assertTrue;
+// REMOVED: import org.junit.Test;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -38,7 +39,7 @@ public class PaymentTest {
 
     @Test
     public void testPolymorphicList() throws Exception {
-        String content = java.nio.file.Files.readString(java.nio.file.Paths.get("src/main/java/Main.java"));
+        String content = java.nio.file.Files.readString(java.nio.file.Paths.get("src/main/java/com/jju/Main.java"));
         assertTrue(content.contains("List<PaymentMethod>") || content.contains("ArrayList<PaymentMethod>"), 
             "Main.java must declare a List of the interface type (PaymentMethod).");
     }
